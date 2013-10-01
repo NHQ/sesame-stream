@@ -1,5 +1,7 @@
 # Sesame Stream
 
+UNDER CONSTRUCTION . gif
+
 API controlled behaviors for your streams. Built specifically for websockets, they will work on any stream.
 
 Currently working on / support for:
