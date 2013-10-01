@@ -1,0 +1,6 @@
+module.exports.pingpong = require('./pingpong')
+module.exports.ticktock = require('./ticktock')
+module.exports.receipt = require('./receipt')
+module.exports.metadata = require('./metadata')
+module.exports.kbps = require('./kbps')
+module.exports.kbps = require('./duplex')

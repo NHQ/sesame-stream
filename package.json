@@ -1,0 +1,24 @@
+{
+  "name": "sesame-stream",
+  "version": "0.0.0",
+  "description": "the instant noodle of stream types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+	"dependencies" : {
+		"since-when" : "2.0",
+		"websocket-stream" : "",
+		"ws" : ""
+	  "level-sublevel". "",
+	  "uuid" : "",
+	  "ecstatic" : "",
+	  "cookies" : "",
+	  "keygrip" : "",
+	  "levelup" : ""
+	},
+  "repository": "",
+  "author": "johnnyscript.us",
+  "license": "BSD"
+}
