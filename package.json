@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
 	"dependencies" : {
-		"since-when" : "2.0",
+		"since-when" : "",
 		"websocket-stream" : "",
 		"ws" : "",
 	  "level-sublevel": "",
@@ -17,7 +17,9 @@
 	  "cookies" : "",
 	  "keygrip" : "",
 	  "levelup" : ""
-	},
+    "scuttlebutt" : "",
+    "leveldown", ""
+  },
   "repository": "",
   "author": "johnnyscript.us",
   "license": "BSD"
