@@ -10,8 +10,8 @@
 	"dependencies" : {
 		"since-when" : "2.0",
 		"websocket-stream" : "",
-		"ws" : ""
-	  "level-sublevel". "",
+		"ws" : "",
+	  "level-sublevel": "",
 	  "uuid" : "",
 	  "ecstatic" : "",
 	  "cookies" : "",
