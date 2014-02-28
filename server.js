@@ -68,7 +68,7 @@ var server = http.createServer(function(req, res){
 	else StaticPass(req, res)
 
 })
-
+/*
 server.on('upgrade', function(req, socket, head){
       var p = parse(req.url);
       var q = qs.parse(p.query);
@@ -91,9 +91,9 @@ server.on('upgrade', function(req, socket, head){
 	else sockets.pingpong(stream, p, q)
       })
 })
+*/
 
-
-//server.on('upgrade', openSesame)
+server.on('upgrade', openSesame)
 
 /*
 server.on('upgrade', function(req, socket, head){

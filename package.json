@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "the instant noodle of stream types",
   "main": "index.js",
+  "browser" : "handlers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,9 +17,9 @@
 	  "ecstatic" : "",
 	  "cookies" : "",
 	  "keygrip" : "",
-	  "levelup" : ""
+	  "levelup" : "",
     "scuttlebutt" : "",
-    "leveldown", ""
+    "leveldown": ""
   },
   "repository": "",
   "author": "johnnyscript.us",
