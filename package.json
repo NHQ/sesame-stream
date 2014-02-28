@@ -21,6 +21,14 @@
     "scuttlebutt" : "",
     "leveldown": ""
   },
+  "devDependencies" : {
+    "teoria" : "",
+    "jsynth" : "",
+    "amod" : "", 
+    "jdelay" : "",
+    "oscillators" : "",
+    "midi" : ""
+  },
   "repository": "",
   "author": "johnnyscript.us",
   "license": "BSD"
