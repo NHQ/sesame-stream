@@ -1,3 +1,4 @@
+module.exports.share = require('./share')
 module.exports.pingpong = require('./pingpong')
 module.exports.ticktock = require('./ticktock')
 module.exports.receipt = require('./receipt')

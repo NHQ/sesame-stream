@@ -60,7 +60,7 @@ var server = http.createServer(function(req, res){
 	// **** DEV CHANNEL **** browserify stuff
 	if(req.url === '/bundle.js'){
 	  res.writeHead(200, {'Content-Type': 'text/javascript'});
-		var b = spawn('browserify', ['-e', 'client.js', '-t', 'brfs', '-d']);
+		var b = spawn('browserify', ['-e', 'entry.js', '-t', 'brfs', '-d']);
 		b.stdout.pipe(res);
 		b.stderr.on('data', function(data){ console.log(data.toString('utf8'))});
   }

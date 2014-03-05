@@ -7,6 +7,7 @@ module.exports = function(stream, path, opts){
 	var payload = null
 	var ns2ms = 1.0 / 1000000.0
 	var d = Object.create(null)
+  d.type = 'ticktock'
 	var ended = false;
 	
 	stream.on('end', closer)
@@ -35,7 +36,7 @@ module.exports = function(stream, path, opts){
 				
 				d.sinceLast = time.sinceLast()
 				
-				stream.write(payload)
+				stream.write(new Buffer(JSON.stringify(d)))
 				
 				stream.emit('metadata', d)
 												
