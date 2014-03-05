@@ -1,33 +1,33 @@
 {
   "name": "sesame-stream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "the instant noodle of stream types",
   "main": "index.js",
-  "browser" : "handlers.js",
+  "browser": "handlers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-	"dependencies" : {
-		"since-when" : "",
-		"websocket-stream" : "",
-		"ws" : "",
-	  "level-sublevel": "",
-	  "uuid" : "",
-	  "ecstatic" : "",
-	  "cookies" : "",
-	  "keygrip" : "",
-	  "levelup" : "",
-    "scuttlebutt" : "",
+  "dependencies": {
+    "since-when": "",
+    "websocket-stream": "",
+    "ws": "",
+    "level-sublevel": "",
+    "uuid": "",
+    "ecstatic": "",
+    "cookies": "",
+    "keygrip": "",
+    "levelup": "",
+    "scuttlebutt": "",
     "leveldown": ""
   },
-  "devDependencies" : {
-    "teoria" : "",
-    "jsynth" : "",
-    "amod" : "", 
-    "jdelay" : "",
-    "oscillators" : "",
-    "midi" : ""
+  "devDependencies": {
+    "teoria": "",
+    "jsynth": "",
+    "amod": "",
+    "jdelay": "",
+    "oscillators": "",
+    "midi": ""
   },
   "repository": "",
   "author": "johnnyscript.us",
