@@ -1,6 +1,6 @@
 {
   "name": "sesame-stream",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "the instant noodle of stream types",
   "main": "index.js",
   "browser": "handlers.js",
@@ -18,8 +18,7 @@
     "keygrip": "",
     "scuttlebutt": ""
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "repository": "",
   "author": "johnnyscript.us",
   "license": "BSD"
