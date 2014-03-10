@@ -10,24 +10,15 @@
   },
   "dependencies": {
     "since-when": "",
-    "websocket-stream": "",
+    "websocket-stream": "0.4.0",
     "ws": "",
-    "level-sublevel": "",
     "uuid": "",
     "ecstatic": "",
     "cookies": "",
     "keygrip": "",
-    "levelup": "",
     "scuttlebutt": "",
-    "leveldown": ""
   },
   "devDependencies": {
-    "teoria": "",
-    "jsynth": "",
-    "amod": "",
-    "jdelay": "",
-    "oscillators": "",
-    "midi": ""
   },
   "repository": "",
   "author": "johnnyscript.us",
