@@ -2,7 +2,7 @@ var websocket = require('websocket-stream')
 var Time = require('since-when')
 var Model = require('scuttlebutt/model');
 var model = new Model();
-var stream = websocket('ws://localhost:'+window.location.port+'?type=share ticktock&interval=3000', {autoDestroy: false})
+var stream = websocket('ws://localhost:'+window.location.port+'?type=share,ticktock&interval=3000', {autoDestroy: false})
 console.log(stream)
 stream.on('data', function(data){
 //  if(!(typeof data == 'string')) data = new Buffer(new Uint8Array(data)) 

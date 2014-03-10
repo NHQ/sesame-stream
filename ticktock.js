@@ -7,7 +7,8 @@ module.exports = function(stream, path, opts){
 	var payload = null
 	var ns2ms = 1.0 / 1000000.0
 	var d = Object.create(null)
-  d.type = 'ticktock'
+  d.metadata = {};
+  d.metadata.type = 'ticktock'
 	var ended = false;
 	
 	stream.on('end', closer)
@@ -30,13 +31,15 @@ module.exports = function(stream, path, opts){
 		time.every(opts.interval / ns2ms, function(tick){			
 			if(!ended){
 				
-				d.timestamp = new Date().getTime();
+				d.metadata.timestamp = new Date().getTime();
 				
-				d.sinceBegin = time.sinceBegin()
+				d.metadata.sinceBegin = time.sinceBegin()
 				
-				d.sinceLast = time.sinceLast()
+				d.metadata.sinceLast = time.sinceLast()
 				
-				stream.write(new Buffer(JSON.stringify(d)))
+        d.data = undefined
+
+				stream.write(JSON.stringify(d))
 				
 				stream.emit('metadata', d)
 												
