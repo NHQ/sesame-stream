@@ -13,7 +13,7 @@ module.exports = function(req, socket, head){
   wss.handleUpgrade(req, socket, head, function(ws){
     var q = qs.parse(parse(req.url).query);
     var stream = websocketStream(ws, {autoDestroy: false})
-    var types = q.type.split(' ');
+    var types = q.type.split(',');
     types.forEach(function(handler){
       sockets[handler](stream, parse(req.url).pathname, q)
     })
