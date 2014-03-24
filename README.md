@@ -8,9 +8,7 @@ Currently working on / support for:
 
 * pingpong - send data back and forth, where data any size 
 * heartbeat - send data at timed intervals
-* kbp/s - optimize for packet sized and latency
-* duplexes - share between two connections
-* multiplexes - share between multiple connections
+* share - stream writes from all clients at the same unqiue path to each other
 
 ```
 npm install sesame-stream
