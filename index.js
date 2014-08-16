@@ -6,16 +6,26 @@ var websocketStream = require('websocket-stream')
 var wss = new WebSocketServer({noServer: true})
 var cookies = require('cookies');
 var keygrip = require('keygrip')(['catpile', 'doglight'])
-
-var sockets = require('./handlers')
+var dataplex = require('dataplex')
+var handlers = require('./handlers')
+var xxx = require('jmao')
+var concat = require('concat-stream')
 
 module.exports = function(req, socket, head){
   wss.handleUpgrade(req, socket, head, function(ws){
-    var q = qs.parse(parse(req.url).query);
     var stream = websocketStream(ws, {autoDestroy: false})
-    var types = q.type.split(',');
-    types.forEach(function(handler){
-      sockets[handler](stream, parse(req.url).pathname, q)
+    var plex = dataplex()
+    plex.add('/meta', function(opject){
+      console.log('meta added')
+      var plex = plex
+      return concat(function(data){
+        data = xxx.construct(data)
+        console.log(data)
+        // data is the event, @object
+        var method = data.method // the command, @string 
+        plex[method](data.id, handlers[data.type])
+      })      
     })
+    stream.pipe(plex).pipe(stream)
   })
 }

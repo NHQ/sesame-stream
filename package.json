@@ -6,17 +6,26 @@
   "browser": "handlers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build" : "browserify -e entry.js -o public/bundle -t brfs -d",
+    "serve" : "node server.js",
+    "start": "npm run build && npm run serve"
   },
   "dependencies": {
-    "since-when": "",
-    "websocket-stream": "0.4.0",
-    "ws": "",
-    "uuid": "",
-    "ecstatic": "",
+    "brfs": "^1.2.0",
+    "concat-stream": "^1.4.6",
     "cookies": "",
+    "dataplex": "^2.0.0",
+    "ecstatic": "",
+    "jmao": "^2.0.0",
     "keygrip": "",
-    "scuttlebutt": ""
+    "level-sublevel": "^6.2.2",
+    "leveldown": "^0.10.2",
+    "levelup": "^0.18.6",
+    "scuttlebutt": "",
+    "since-when": "",
+    "uuid": "",
+    "websocket-stream": "0.6.0",
+    "ws": ""
   },
   "devDependencies": {},
   "repository": "",
